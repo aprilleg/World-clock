@@ -26,6 +26,10 @@ function updateCity(event) {
   let defaultCities = document.querySelector("#default-cities");
   let selectedCityDiv = document.querySelector("#selected-city");
 
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+
   if (cityTimeZone === "/") {
     selectedCityDiv.style.display = "none";
     defaultCities.style.display = "block";
