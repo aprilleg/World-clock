@@ -11,46 +11,46 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select name="/" id="countries">
+
+      <select id="countries">
         <option value="/">Select--</option>
-        <option value="Asia/Manila">Philippines</option>
+        <option value="Europe/Paris">Paris</option>
         <option value="Australia/Brisbane">Australia</option>
-        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="US/Alaska">Alaska</option>
         <option value="Indian/Maldives">Maldives</option>
         <option value="Pacific/Honolulu">Hawaii</option>
       </select>
-      <div class="country">
-        <div id="philippines">
-          <div>
-            <h2>Philippines</h2>
-            <div class="date"></div>
+      
+      <div id="default-cities">
+        <div class="country">
+          <div class="city" id="philippines">
+            <div>
+              <h2>Philippines</h2>
+              <div class="date"></div>
+            </div>
           </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="country">
-        <div id="tokyo">
-          <div>
-            <h2>Tokyo</h2>
-            <div class="date"></div>
+
+        <div class="country">
+          <div class="city" id="tokyo">
+            <div>
+              <h2>Tokyo</h2>
+              <div class="date"></div>
+            </div>
           </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
+
+      <div id="selected-city" style="display: none;"></div>
     </div>
 
     <footer>
       This project was created by
-      <a
-        href="https://aprille-g.netlify.app/#"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Aprille Guevarra</a
-      >
+      <a href="https://aprille-g.netlify.app/#" target="_blank" rel="noopener noreferrer">Aprille Guevarra</a>
       and is
-      <a href="https://github.com/aprilleg/World-clock" target="_blank"
-        >open source on GitHub.</a
-      >
+      <a href="https://github.com/aprilleg/World-clock" target="_blank">open source on GitHub</a>.
     </footer>
     <script src="/src/index.js"></script>
   </body>
